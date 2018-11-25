@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:n1="http://schemas.android.com/apk/res/android"
+    n1:layout_width="fill_parent"
+    n1:layout_height="wrap_content"
+    n1:background="@color/white"
+    n1:orientation="vertical">
+
+    <LinearLayout
+        n1:layout_width="match_parent"
+        n1:layout_height="wrap_content"
+        n1:gravity="center"
+        n1:orientation="horizontal">
+
+        <LinearLayout
+            n1:layout_width="0dp"
+            n1:layout_height="match_parent"
+            n1:layout_weight="1"
+            n1:orientation="vertical">
+
+            <RelativeLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginRight="15.0dip"
+                n1:layout_marginTop="@dimen/dimen_15">
+
+                <TextView
+                    n1:id="@+id/bank_name"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:text="平安银行"
+                    n1:textColor="@color/text_main"
+                    n1:textSize="16.0dip" />
+
+                <TextView
+                    n1:id="@+id/bank_no"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_centerVertical="true"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:layout_toRightOf="@+id/bank_name"
+                    n1:text="000001"
+                    n1:textColor="@color/text_third"
+                    n1:textSize="12.0dip" />
+
+                <ImageView
+                    n1:id="@+id/join_in"
+                    n1:layout_width="54.0dip"
+                    n1:layout_height="20.0dip"
+                    n1:layout_centerVertical="true"
+                    n1:layout_marginLeft="5.0dip"
+                    n1:layout_toEndOf="@id/bank_no"
+                    n1:src="@mipmap/chicangzhong"
+                    n1:textColor="#ffffffff"
+                    n1:textSize="15.0dip" />
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginRight="15.0dip"
+                n1:layout_marginTop="@dimen/dimen_5"
+                n1:orientation="horizontal">
+
+                <ImageView
+                    n1:layout_width="12.0dip"
+                    n1:layout_height="12.0dip"
+                    n1:layout_centerVertical="true"
+                    n1:layout_gravity="center_vertical"
+                    n1:layout_marginTop="@dimen/dimen_1"
+                    n1:layout_toLeftOf="@+id/_time"
+                    n1:background="@mipmap/time"
+                    n1:scaleType="fitXY" />
+
+                <TextView
+                    n1:id="@+id/_time"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_alignParentRight="true"
+                    n1:layout_centerVertical="true"
+                    n1:layout_marginLeft="3.0dip"
+                    n1:text="2017.08.09  21:45:05"
+                    n1:textColor="@color/text_third"
+                    n1:textSize="12.0dip" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                n1:layout_width="fill_parent"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="15.0dip"
+                n1:layout_marginRight="15.0dip"
+                n1:layout_marginTop="@dimen/dimen_5"
+                n1:orientation="horizontal">
+
+                <TextView
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:text="交易订单"
+                    n1:textColor="@color/text_third"
+                    n1:textSize="12.0dip" />
+
+                <TextView
+                    n1:id="@+id/tv_ordernum"
+                    n1:layout_width="wrap_content"
+                    n1:layout_height="wrap_content"
+                    n1:layout_marginLeft="4.0dip"
+                    n1:layout_toRightOf="@+id/tv_yingkui"
+                    n1:text="\ 123456789"
+                    n1:textColor="@color/text_third"
+                    n1:textSize="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="wrap_content"
+            n1:layout_height="wrap_content"
+            n1:layout_marginRight="@dimen/dimen_16"
+            n1:layout_marginBottom="@dimen/dimen_10"
+            n1:orientation="vertical">
+
+            <Button
+                n1:layout_width="100dp"
+                n1:layout_height="30.0dip"
+                n1:layout_marginTop="20dp"
+                n1:background="@drawable/testbg"
+                n1:gravity="center"
+                n1:text="卖出"
+                n1:textColor="#ffffffff"
+                n1:textSize="16.0dip" />
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_gravity="bottom|right"
+                n1:layout_marginTop="15dp"
+                n1:drawablePadding="@dimen/dimen_10"
+                n1:drawableRight="@mipmap/pack_up"
+                n1:text="收起"
+                n1:textColor="@color/yellow_new"
+                n1:textSize="16.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        n1:layout_width="fill_parent"
+        n1:layout_height="2.0dip"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:background="@drawable/dotted_line_shape"
+        n1:layerType="software" />
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:layout_marginTop="10.0dip"
+        n1:gravity="center_vertical">
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="选买服务费"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/principal"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="45，434元"
+                n1:textColor="@color/text_main"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="fill_parent"
+            n1:layout_weight="1.0">
+
+            <TextView
+                n1:id="@+id/tv_yingkui"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="20.0dip"
+                n1:text="选买金额"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/ykui"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:layout_toRightOf="@+id/tv_yingkui"
+                n1:text="-2"
+                n1:textColor="@color/text_main"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:layout_marginTop="6.0dip"
+        n1:orientation="horizontal">
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="浮动盈亏"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/usable"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="100股"
+                n1:textColor="@color/orange"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <TextView
+                n1:id="@+id/tv_zhouqi"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="20.0dip"
+                n1:text="卖出周期"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/loss"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:layout_toRightOf="@+id/tv_zhouqi"
+                n1:text="两周"
+                n1:textColor="@color/text_main"
+                n1:textSize="12.0dip" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:layout_marginTop="6.0dip"
+        n1:orientation="horizontal">
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="成交价    "
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/tv_type"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="T+5"
+                n1:textColor="@color/text_main"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+        <RelativeLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0">
+
+            <TextView
+                n1:id="@+id/tv_leverage"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="20.0dip"
+                n1:text="当前价    "
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/tv_multiple"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:layout_toRightOf="@+id/tv_leverage"
+                n1:text="8倍"
+                n1:textColor="@color/red"
+                n1:textSize="12.0dip" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        n1:layout_width="fill_parent"
+        n1:layout_height="wrap_content"
+        n1:layout_marginLeft="15.0dip"
+        n1:layout_marginRight="15.0dip"
+        n1:layout_marginTop="6.0dip"
+        n1:orientation="horizontal">
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:orientation="horizontal">
+
+            <TextView
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:text="成交时间"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/tv_dealtime"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:text="T+5"
+                n1:textColor="@color/orange"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            n1:layout_width="0.0dip"
+            n1:layout_height="wrap_content"
+            n1:layout_weight="1.0"
+            n1:layout_marginBottom="@dimen/dimen_10">
+
+            <TextView
+                n1:id="@+id/tv_dealTimeTv"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="20.0dip"
+                n1:text="到期时间"
+                n1:textColor="@color/text_third"
+                n1:textSize="12.0dip" />
+
+            <TextView
+                n1:id="@+id/tv_expiretime"
+                n1:layout_width="wrap_content"
+                n1:layout_height="wrap_content"
+                n1:layout_marginLeft="5.0dip"
+                n1:layout_toRightOf="@+id/tv_dealTimeTv"
+                n1:text="8倍"
+                n1:textColor="@color/text_main"
+                n1:textSize="12.0dip" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

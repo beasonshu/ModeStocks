@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".StartActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="股票名称：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/name"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="股票代码：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/code"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易时间：" />
+
+            <Button
+                android:id="@+id/_time"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:text="请输入"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="交易订单：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/order"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberSigned"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选买服务费(元)：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/fee"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选买金额(万元)：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/amount"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:text="卖出周期：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/period"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交价(元)：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/dealtPrice"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="当前价(元)：" />
+
+            <EditText  android:maxLines="1"
+                android:id="@+id/currentPrice"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:inputType="numberDecimal"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="成交时间：" />
+
+            <Button
+                android:id="@+id/dealtTime"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:text="请输入"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="到期时间：" />
+
+            <Button
+                android:id="@+id/expiretime"
+                android:layout_width="@dimen/dimen_240"
+                android:layout_height="@dimen/dimen_50"
+                android:text="请输入"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/sureBtn"
+            android:layout_width="200dp"
+            android:layout_height="50.0dip"
+            android:layout_margin="20dp"
+            android:background="@drawable/testbg"
+            android:gravity="center"
+            android:text="确认"
+            android:textColor="#ffffffff"
+            android:textSize="16.0dip" />
+
+
+    </LinearLayout>
+</ScrollView>
