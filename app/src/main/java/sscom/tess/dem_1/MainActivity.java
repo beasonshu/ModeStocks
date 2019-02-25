@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
     TextView cjsj;
     @BindView(R.id.tv_expiretime)
     TextView dqsj;
-
+    @BindView(R.id.hide)
+    View hide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
         View titleBar = findViewById(R.id.titlebar);
         StatusBarUtil.immersive(this);
         StatusBarUtil.setPaddingSmart(this, titleBar);
-
 
         StockBean bean = (StockBean) getIntent().getSerializableExtra("bean");
         if (bean==null){
@@ -68,7 +68,33 @@ public class MainActivity extends AppCompatActivity {
         tqj.setText(numberStr(bean.currentPrice)+"元");
         cjsj.setText(bean.dealtDate);
         dqsj.setText(bean.expiredDate);
+        hide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                hideNavigationBar();
+            }
+        });
 
+    }
+
+    //隐藏导航栏和状态栏
+    @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            getWindow().getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
+
+
+    private void hideNavigationBar() {
+        View decorView = getWindow().getDecorView();
+        int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                | View.SYSTEM_UI_FLAG_FULLSCREEN;
+        decorView.setSystemUiVisibility(uiOptions);
     }
 
     public String numberStr(String s){
